@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --sm: 16px;
+  --md: 24px;
+  --lg: 36px;
+  --subtitulos: rgba(128, 128, 128,0.6);
+}
+/* Cambia el color de fondo del body */
+body {
+    background-color: rgba(173, 216, 230, 0.1);
+    font-family: 'Abril Fatface', cursive;
+  font-family: 'Cinzel Decorative', cursive;
+  font-family: 'Quicksand', sans-serif;
+  }
+
+.encabezado {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(100px,1fr));
+  justify-content: center;
+}
+  .encabezado__lista {
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+    height: 32px;
+    background-color: rgb(173, 216, 230);
+    border-bottom-left-radius: 50%;
+  }
+  .encabezado__lista li{
+    list-style: none;
+    margin-right: 8px;
+  }
+  .encabezado__lista a{
+    text-decoration: none;
+    color: black;
+    font-size: var(--sm);
+  }
+
+  /* Oculta los elementos con la clase .ocultar */
+  .ocultar {
+    display: none;
+  }
+
+  #inicio {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(auto,640px));
+    place-items: center;
+    margin-top: 20px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--subtitulos);
+    
+  }
+
+  .inicio__contenido {
+    position: absolute;
+  }
+
+  .incio__imagen figcaption{
+    color: var(--subtitulos);
+    font-size: var(--sm);
+  }
+
+  .FotoDePerfil {
+    width: 16em;
+    height: 20em;
+    object-fit: cover;
+    border-radius: 48%;
+    border: 1px solid black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  #servicios {
+    border-bottom: 1px solid var(--subtitulos);
+    padding-bottom: 12px;
+
+  }
+
+  #equipo {
+    margin-bottom: 12px;
+  }
+
+  .footer {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .footer li {
+    color: white;
+    list-style: none;
+  }
+
+  .footer__imagen img {
+    width: 200px;
+    height: 164px;
+
+  }
+
+
+  #btn-whatsapp {
+    position: fixed; /* Hace que el botón flote en la pantalla */
+    bottom: 20px; /* Distancia desde el borde inferior */
+    right: 20px; /* Distancia desde el borde derecho */
+    background-color: #25d366; /* Color de fondo */
+    border-radius: 50%; /* Hace que el botón sea redondo */
+    width: 60px; /* Ancho del botón */
+    height: 60px; /* Alto del botón */
+    display: flex; /* Centra el contenido horizontalmente y verticalmente */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra del botón */
+    transition: all 0.3s ease; /* Efecto de transición al pasar el ratón por encima */
+    object-fit: fill;
+  }
+
+  #btn-whatsapp img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  #btn-whatsapp:hover, #btn-whatsapp:active {
+    transform: translateY(-5px); /* Desplaza el botón hacia arriba al pasar el ratón por encima */
+  }
+
+@media (max-width: 640px) {
+  .encabezado__lista {
+    display: none;
+  }
+
+  .incio__imagen {
+    display: none;
+  }
+
+  #servcios {
+    margin-top: 28px;
+  }
+}
