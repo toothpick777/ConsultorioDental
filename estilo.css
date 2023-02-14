@@ -6,7 +6,7 @@
 
 :root {
   --sm: 16px;
-  --md: 24px;
+  --md: 20px;
   --lg: 36px;
   --subtitulos: rgba(128, 128, 128,0.6);
 }
@@ -65,7 +65,7 @@ body {
     font-size: var(--sm);
   }
 
-  .FotoDePerfil {
+  .incio__imagen img {
     width: 16em;
     height: 20em;
     object-fit: cover;
@@ -76,24 +76,48 @@ body {
 
   #servicios {
     border-bottom: 1px solid var(--subtitulos);
-    padding-bottom: 12px;
+    padding-bottom: 20px;
 
   }
 
-  #equipo {
+#equipo {
+    border-bottom: 1px solid var(--subtitulos);
+    padding-bottom: 12px;
+  }
+
+#horario {
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
     margin-bottom: 12px;
   }
 
-  .footer {
+  .table {
+    border: 1px solid var(--subtitulos);
+  }
+
+  thead td:nth-child(1){
+    font-size: var(--lg);
+    
+  }
+
+  tr td {
+    font-size: var(--md);
+    padding-right: 12px;
+  }
+
+  #footer {
     background-color: black;
     display: flex;
     flex-direction: column;
     align-content: center;
   }
 
-  .footer li {
+  #footer li a{
     color: white;
     list-style: none;
+    text-decoration: none;
+    margin-bottom: 8px;
   }
 
   .footer__imagen img {
