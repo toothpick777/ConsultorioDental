@@ -77,7 +77,11 @@ body {
   #servicios {
     border-bottom: 1px solid var(--subtitulos);
     padding-bottom: 20px;
+  }
 
+  .servicios__caja {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,max-content));
   }
 
 #equipo {
@@ -110,20 +114,30 @@ body {
     background-color: black;
     display: flex;
     flex-direction: column;
-    align-content: center;
+    justify-content: center;
+    height: 16em;
   }
 
   #footer li a{
     color: white;
     list-style: none;
     text-decoration: none;
-    margin-bottom: 8px;
+    font-size: var(--md);
+   
   }
+
+  #footer li {
+    margin-top: 20px;
+    height: 4em;
+    width: 16em;
+    background-color: var(--subtitulos);
+    border-radius: 8px;
+  }
+
 
   .footer__imagen img {
     width: 200px;
     height: 164px;
-
   }
 
 
