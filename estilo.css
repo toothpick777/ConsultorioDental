@@ -18,6 +18,8 @@ body {
   font-family: 'Quicksand', sans-serif;
   }
 
+/* INICIO DE ENCABEZADO */
+
 .encabezado {
   display: grid;
   grid-template-columns: repeat(2, minmax(100px,1fr));
@@ -41,10 +43,14 @@ body {
     font-size: var(--sm);
   }
 
+/* FIN DE ENCABEZADO */
+
   /* Oculta los elementos con la clase .ocultar */
   .ocultar {
     display: none;
   }
+
+  /* INICIO DE PRESENTACION */
 
   #inicio {
     display: grid;
@@ -74,6 +80,10 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
 
+  /* FIN DE PRESETACION */
+
+  /* INICIO DE SERVICIOS */
+
   #servicios {
     border-bottom: 1px solid var(--subtitulos);
     padding-bottom: 20px;
@@ -82,12 +92,21 @@ body {
   .servicios__caja {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px,max-content));
+    place-content: center;
   }
+
+  /* FIN DE SERVICIOS */
+
+  /* INICIO DE EQUIPO */
 
 #equipo {
     border-bottom: 1px solid var(--subtitulos);
     padding-bottom: 12px;
   }
+
+  /* FIN DE EQUIPO */
+
+  /* INICIO DE HORARIOS */
 
 #horario {
     display: flex;
@@ -109,6 +128,10 @@ body {
     font-size: var(--md);
     padding-right: 12px;
   }
+
+  /* FIN DE HORARIOS */
+
+  /* INCIO DEL PIE DE PAGÍNA */
 
   #footer {
     background-color: black;
@@ -140,7 +163,9 @@ body {
     height: 164px;
   }
 
+  /* FIN DEL PIE DE PAGÍNA */
 
+  /* BOTTON DE WHATSAPP */
   #btn-whatsapp {
     position: fixed; /* Hace que el botón flote en la pantalla */
     bottom: 20px; /* Distancia desde el borde inferior */
@@ -167,6 +192,8 @@ body {
   #btn-whatsapp:hover, #btn-whatsapp:active {
     transform: translateY(-5px); /* Desplaza el botón hacia arriba al pasar el ratón por encima */
   }
+
+   /* FIN DEL BOTTON DE WHATSAPP */
 
 @media (max-width: 640px) {
   .encabezado__lista {
